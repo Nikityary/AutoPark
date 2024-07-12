@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autopark.HelloController">
+   <children>
+      <TextArea fx:id="bug" layoutX="279.0" layoutY="8.0" prefHeight="37.0" prefWidth="1089.0" visible="false" wrapText="true" />
+      <ComboBox fx:id="box" layoutX="14.0" layoutY="14.0" onAction="#auto_changed" prefHeight="25.0" prefWidth="259.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <ImageView fx:id="im2" fitHeight="324.0" fitWidth="435.0" layoutX="931.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="im1" fitHeight="324.0" fitWidth="435.0" layoutX="496.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="im4" fitHeight="324.0" fitWidth="435.0" layoutX="496.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="im3" fitHeight="324.0" fitWidth="435.0" layoutX="931.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <TitledPane layoutX="13.0" layoutY="48.0" prefHeight="377.0" prefWidth="468.0" text="Данные о состоянии автомобиля">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="257.0">
+               <children>
+                  <ProgressBar fx:id="l1" layoutX="207.0" layoutY="5.0" prefHeight="18.0" prefWidth="259.0" progress="0.0" />
+                  <Label fx:id="l2" layoutX="206.0" layoutY="23.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l3" layoutX="206.0" layoutY="40.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l4" layoutX="206.0" layoutY="57.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l5" layoutX="205.0" layoutY="74.0" prefHeight="17.0" prefWidth="259.0" />
+                  <ProgressBar fx:id="l6" layoutX="206.0" layoutY="91.0" prefHeight="18.0" prefWidth="259.0" progress="0.0" />
+                  <ProgressBar fx:id="l7" layoutX="207.0" layoutY="109.0" prefHeight="18.0" prefWidth="259.0" progress="0.0" />
+                  <ProgressBar fx:id="l8" layoutX="207.0" layoutY="127.0" prefHeight="18.0" prefWidth="259.0" progress="0.0" />
+                  <ProgressBar fx:id="l9" layoutX="207.0" layoutY="145.0" prefHeight="18.0" prefWidth="259.0" progress="0.0" />
+                  <ProgressBar fx:id="l10" layoutX="207.0" layoutY="163.0" prefHeight="18.0" prefWidth="259.0" progress="0.0" />
+                  <Label fx:id="l11" layoutX="208.0" layoutY="181.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l12" layoutX="208.0" layoutY="198.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l13" layoutX="206.0" layoutY="215.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l14" layoutX="207.0" layoutY="232.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l15" layoutX="207.0" layoutY="249.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l16" layoutX="207.0" layoutY="266.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l17" layoutX="207.0" layoutY="283.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label fx:id="l18" layoutX="207.0" layoutY="300.0" prefHeight="17.0" prefWidth="259.0" />
+                  <Label layoutX="8.0" layoutY="6.0" prefHeight="17.0" prefWidth="200.0" text="Двигатель" />
+                  <Label layoutX="8.0" layoutY="23.0" prefHeight="17.0" prefWidth="200.0" text="Переднее левое колесо" />
+                  <Label layoutX="8.0" layoutY="40.0" prefHeight="17.0" prefWidth="200.0" text="Переднее правое колесо" />
+                  <Label layoutX="8.0" layoutY="164.0" prefHeight="17.0" prefWidth="200.0" text="Задний правый тормоз" />
+                  <Label layoutX="8.0" layoutY="146.0" prefHeight="17.0" prefWidth="200.0" text="Задний левый тормоз" />
+                  <Label layoutX="8.0" layoutY="128.0" prefHeight="17.0" prefWidth="200.0" text="Передний правый тормоз" />
+                  <Label layoutX="8.0" layoutY="110.0" prefHeight="17.0" prefWidth="200.0" text="Передний левый тормоз" />
+                  <Label layoutX="8.0" layoutY="92.0" prefHeight="17.0" prefWidth="200.0" text="Масло" />
+                  <Label layoutX="8.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="Заднее правое колесо" />
+                  <Label layoutX="8.0" layoutY="57.0" prefHeight="17.0" prefWidth="200.0" text="Заднее левое колесо" />
+                  <Label layoutX="8.0" layoutY="300.0" prefHeight="17.0" prefWidth="200.0" text="Правый стоп-сигнал" />
+                  <Label layoutX="8.0" layoutY="181.0" prefHeight="17.0" prefWidth="200.0" text="Передний левый поворотник" />
+                  <Label layoutX="8.0" layoutY="198.0" prefHeight="17.0" prefWidth="200.0" text="Передний правый поворотник" />
+                  <Label layoutX="8.0" layoutY="215.0" prefHeight="17.0" prefWidth="200.0" text="Задний левый поворотник" />
+                  <Label layoutX="8.0" layoutY="232.0" prefHeight="17.0" prefWidth="200.0" text="Задний правый поворотник" />
+                  <Label layoutX="8.0" layoutY="249.0" prefHeight="17.0" prefWidth="200.0" text="Левая фара" />
+                  <Label layoutX="8.0" layoutY="266.0" prefHeight="17.0" prefWidth="200.0" text="Правая фара" />
+                  <Label layoutX="8.0" layoutY="283.0" prefHeight="17.0" prefWidth="200.0" text="Левый стоп-сигнал" />
+                  <Button fx:id="upd_bt" layoutX="6.0" layoutY="325.0" mnemonicParsing="false" onAction="#upt_bt_click" prefHeight="25.0" prefWidth="259.0" text="Обновить данные о состоянии автомобиля">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="submit_bt" layoutX="272.0" layoutY="325.0" mnemonicParsing="false" onAction="#submit_bt_click" prefHeight="25.0" prefWidth="192.0" text="Подтвердить" />
+                  <CheckBox fx:id="ch10" layoutX="190.0" layoutY="6.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch11" layoutX="190.0" layoutY="23.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch12" layoutX="190.0" layoutY="40.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch13" layoutX="190.0" layoutY="57.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch14" layoutX="190.0" layoutY="74.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch15" layoutX="190.0" layoutY="92.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch16" layoutX="190.0" layoutY="110.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch17" layoutX="190.0" layoutY="128.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch18" layoutX="190.0" layoutY="146.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch19" layoutX="190.0" layoutY="164.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch110" layoutX="190.0" layoutY="181.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch111" layoutX="190.0" layoutY="198.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch112" layoutX="190.0" layoutY="215.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch113" layoutX="190.0" layoutY="232.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch114" layoutX="190.0" layoutY="249.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch115" layoutX="190.0" layoutY="266.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch116" layoutX="190.0" layoutY="283.0" mnemonicParsing="false" visible="false" />
+                  <CheckBox fx:id="ch117" layoutX="190.0" layoutY="300.0" mnemonicParsing="false" visible="false" />
+               </children>
+            </AnchorPane>
+        </content>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TitledPane>
+      <Button fx:id="bt1" layoutX="1279.0" layoutY="48.0" mnemonicParsing="false" onAction="#bt1_click" prefHeight="25.0" prefWidth="87.0" text="Повернуть" />
+      <ImageView fx:id="im6" fitHeight="324.0" fitWidth="435.0" layoutX="931.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="im5" fitHeight="324.0" fitWidth="435.0" layoutX="496.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutX="13.0" layoutY="640.0" prefHeight="140.0" prefWidth="468.0" style="-fx-border-width: 1.5; -fx-border-color: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label fx:id="l19" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="14.0" prefHeight="27.0" prefWidth="217.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="l20" layoutX="237.0" layoutY="14.0" prefHeight="27.0" prefWidth="217.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="l21" layoutX="8.0" layoutY="47.0" prefHeight="18.0" prefWidth="454.0" progress="0.0" />
+            <Label fx:id="l22" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="72.0" prefHeight="20.0" prefWidth="223.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l23" layoutX="237.0" layoutY="72.0" prefHeight="20.0" prefWidth="217.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="nw_bt" layoutX="8.0" layoutY="101.0" mnemonicParsing="false" onAction="#nw_bt_click" prefHeight="25.0" prefWidth="217.0" text="Новый маршрут" />
+            <Button fx:id="yes_bt" layoutX="245.0" layoutY="101.0" mnemonicParsing="false" onAction="#yes_bt_click" prefHeight="25.0" prefWidth="217.0" text="Подтвердить" />
+            <TextField fx:id="e3" layoutX="8.0" layoutY="70.0" prefHeight="25.0" prefWidth="217.0" visible="false" />
+            <TextField fx:id="e4" layoutX="245.0" layoutY="70.0" prefHeight="25.0" prefWidth="217.0" visible="false" />
+            <DatePicker fx:id="e2" layoutX="244.0" layoutY="15.0" onAction="#date_edit" prefHeight="25.0" prefWidth="217.0" visible="false" />
+         </children>
+      </Pane>
+      <Pane layoutX="13.0" layoutY="574.0" prefHeight="57.0" prefWidth="468.0" style="-fx-border-width: 1.5; -fx-border-color: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <TextField fx:id="na1" layoutX="8.0" layoutY="29.0" onAction="#na1_set" prefHeight="25.0" prefWidth="350.0" />
+            <Label alignment="CENTER" layoutX="1.0" layoutY="6.0" prefHeight="17.0" prefWidth="461.0" text="Добавить новый автомобиль" />
+            <Button fx:id="cont_bt" layoutX="358.0" layoutY="29.0" mnemonicParsing="false" onAction="#cont_bt_click" prefHeight="25.0" prefWidth="104.0" text="Продолжить" />
+         </children>
+      </Pane>
+      <AnchorPane fx:id="npane" layoutX="515.0" layoutY="333.0" prefHeight="445.0" prefWidth="510.0" style="-fx-border-color: black; -fx-border-width: 1.5;" visible="false">
+         <children>
+            <Button fx:id="close_bt" layoutX="483.0" layoutY="2.0" mnemonicParsing="false" onAction="#close_bt_click" prefHeight="18.0" prefWidth="18.0" text="X" />
+            <Label layoutX="8.0" layoutY="2.0" prefHeight="17.0" prefWidth="200.0" text="Двигатель" />
+            <Label layoutX="8.0" layoutY="42.0" prefHeight="17.0" prefWidth="200.0" text="Переднее левое колесо" />
+            <Label layoutX="8.0" layoutY="59.0" prefHeight="17.0" prefWidth="200.0" text="Переднее правое колесо" />
+            <Label layoutX="8.0" layoutY="245.0" prefHeight="17.0" prefWidth="200.0" text="Задний правый тормоз" />
+            <Label layoutX="8.0" layoutY="212.0" prefHeight="17.0" prefWidth="200.0" text="Задний левый тормоз" />
+            <Label layoutX="8.0" layoutY="179.0" prefHeight="17.0" prefWidth="200.0" text="Передний правый тормоз" />
+            <Label layoutX="8.0" layoutY="145.0" prefHeight="17.0" prefWidth="200.0" text="Передний левый тормоз" />
+            <Label layoutX="8.0" layoutY="111.0" prefHeight="17.0" prefWidth="200.0" text="Масло" />
+            <Label layoutX="8.0" layoutY="93.0" prefHeight="17.0" prefWidth="200.0" text="Заднее правое колесо" />
+            <Label layoutX="8.0" layoutY="76.0" prefHeight="17.0" prefWidth="200.0" text="Заднее левое колесо" />
+            <Label layoutX="8.0" layoutY="398.0" prefHeight="17.0" prefWidth="200.0" text="Правый стоп-сигнал" />
+            <Label layoutX="8.0" layoutY="279.0" prefHeight="17.0" prefWidth="200.0" text="Передний левый поворотник" />
+            <Label layoutX="8.0" layoutY="296.0" prefHeight="17.0" prefWidth="200.0" text="Передний правый поворотник" />
+            <Label layoutX="8.0" layoutY="313.0" prefHeight="17.0" prefWidth="200.0" text="Задний левый поворотник" />
+            <Label layoutX="8.0" layoutY="330.0" prefHeight="17.0" prefWidth="200.0" text="Задний правый поворотник" />
+            <Label layoutX="8.0" layoutY="347.0" prefHeight="17.0" prefWidth="200.0" text="Левая фара" />
+            <Label layoutX="8.0" layoutY="364.0" prefHeight="17.0" prefWidth="200.0" text="Правая фара" />
+            <Label layoutX="8.0" layoutY="381.0" prefHeight="17.0" prefWidth="200.0" text="Левый стоп-сигнал" />
+            <Slider fx:id="k1" layoutX="208.0" layoutY="3.0" majorTickUnit="10.0" prefHeight="17.0" prefWidth="265.0" showTickLabels="true" value="100.0" />
+            <Slider fx:id="k6" layoutX="208.0" layoutY="112.0" majorTickUnit="10.0" prefHeight="17.0" prefWidth="265.0" showTickLabels="true" value="100.0" />
+            <Slider fx:id="k7" layoutX="208.0" layoutY="146.0" majorTickUnit="10.0" prefHeight="17.0" prefWidth="265.0" showTickLabels="true" value="100.0" />
+            <Slider fx:id="k8" layoutX="208.0" layoutY="179.0" majorTickUnit="10.0" prefHeight="17.0" prefWidth="265.0" showTickLabels="true" value="100.0" />
+            <Slider fx:id="k9" layoutX="208.0" layoutY="212.0" majorTickUnit="10.0" prefHeight="17.0" prefWidth="265.0" showTickLabels="true" value="100.0" />
+            <Slider fx:id="k10" layoutX="208.0" layoutY="246.0" majorTickUnit="10.0" prefHeight="17.0" prefWidth="265.0" showTickLabels="true" value="100.0" />
+            <CheckBox fx:id="k2" layoutX="208.0" layoutY="42.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k3" layoutX="208.0" layoutY="59.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k4" layoutX="208.0" layoutY="76.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k5" layoutX="208.0" layoutY="93.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k11" layoutX="208.0" layoutY="279.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k12" layoutX="208.0" layoutY="296.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k13" layoutX="208.0" layoutY="313.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k14" layoutX="208.0" layoutY="330.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k15" layoutX="208.0" layoutY="347.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k16" layoutX="208.0" layoutY="364.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k17" layoutX="208.0" layoutY="381.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <CheckBox fx:id="k18" layoutX="208.0" layoutY="398.0" mnemonicParsing="false" selected="true" text="Исправно" />
+            <Button fx:id="yes_bt1" layoutX="419.0" layoutY="419.0" mnemonicParsing="false" onAction="#yes_bt1_click" text="Подтвердить" />
+         </children>
+      </AnchorPane>
+      <Line fx:id="line1" endX="110.0" endY="-139.0" layoutX="405.0" layoutY="472.0" startX="76.0" startY="102.0" visible="false" />
+      <Line fx:id="line2" endX="100.0" endY="298.0" layoutX="415.0" layoutY="482.0" startX="66.0" startY="149.0" visible="false" />
+   </children>
+</AnchorPane>
